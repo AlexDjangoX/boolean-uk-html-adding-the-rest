@@ -1,70 +1,81 @@
-body {
-  display: grid;
-  grid-template:
-    ". navigation navigation navigation ." 4rem
-    ". left-panel main-content right-panel ." 1fr
-    / 1fr 1fr 1fr 1fr 1fr;
-}
+@import "./layout/grid";
+@import "./layout/navigation";
+@import "./layout/reset";
 
-.navigation {
-  display: grid;
-  grid-area: navigation;
-}
 .left-panel {
-  display: grid;
-  grid-area: left-panel;
-}
-.main-content {
-  display: grid;
-  grid-area: main-content;
-}
-.right-panel {
-  display: grid;
-  grid-area: right-panel;
-}
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 16px;
+  &__images {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto;
 
-.navigation {
-  display: grid;
-  grid-template: ". ." / 6fr 12fr;
-
-  padding-left: 0;
-
-  &__left-side {
-    display: flex;
-    align-items: center;
+    padding-top: 0.5rem;
   }
+  &__header-image {
+    width: 12rem;
+    height: 3rem;
 
-  &__linked-in-icon {
-    padding-right: 1rem;
-  }
+    object-fit: cover;
+    width: 100%;
 
-  &____left-side-search {
-  }
-
-  &__search-label {
     position: relative;
+    top: 0px;
+    left: 0px;
   }
-  &__search-label:before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E")
-      center / contain no-repeat;
+  &__profile-image {
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid white;
+
+    position: relative;
+    top: -20px;
+  }
+  &__content {
+  }
+  &__top-heading,
+  &__sub-heading {
+    display: grid;
+    place-items: center;
+
+    font-weight: 400;
+
+    padding: 0.2rem;
   }
 
-  &__search-input {
-    padding: 10px 30px;
+  &__top-heading {
+    font-size: 1.2rem;
   }
 
-  &__links {
+  &__sub-heading {
+    font-size: 1.2rem;
+  }
+
+  &__views-posts {
+    display: grid;
+    grid-template: ". . " / 3fr 1fr;
+  }
+  &__views-content {
+    font-size: 14px;
+
+    padding: 1rem 0;
+  }
+  &__views-numbers {
+    color: rgb(0, 26, 255);
+    font-weight: 600;
+
+    padding: 1rem 0;
+  }
+  &__access-offers {
+    font-size: 12px;
+
+    padding: 1rem 0;
+  }
+
+  &__my-items-link {
     display: flex;
-  }
 
-  &__links > * {
-    list-style: none;
-    padding: 1rem;
+    padding: 6px;
+    font-size: 12px;
   }
 }
