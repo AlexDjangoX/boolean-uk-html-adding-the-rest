@@ -5,7 +5,8 @@
   padding-left: 0;
 
   &__left-side {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
   }
 
@@ -35,11 +36,12 @@
   }
 
   &__links {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
   }
 
   &__links > * {
     list-style: none;
-    padding: 1rem;
+    padding: 0.8rem;
   }
 }

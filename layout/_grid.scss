@@ -4,22 +4,34 @@ body {
   display: grid;
   grid-template:
     ". navigation navigation navigation ." 4rem
-    ". left-panel main-content right-panel ." 1fr
+    ". left-panel main-content right-panel ." 25rem
     / 1fr 1fr 1fr 1fr 1fr;
+
+  grid-gap: 0.5rem;
+
+  background-color: rgb(228, 228, 228);
 }
 .navigation {
   display: grid;
   grid-area: navigation;
+
+  background-color: rgba(0, 183, 255, 0.61);
 }
 .left-panel {
   display: grid;
   grid-area: left-panel;
+
+  background-color: rgb(240, 243, 247);
 }
 .main-content {
   display: grid;
   grid-area: main-content;
+
+  background-color: rgb(255, 233, 160);
 }
 .right-panel {
   display: grid;
   grid-area: right-panel;
+
+  background-color: antiquewhite;
 }
