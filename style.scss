@@ -1,13 +1,44 @@
+body {
+  display: grid;
+  grid-template:
+    ". navigation navigation navigation ." 4rem
+    ". left-panel main-content right-panel ." 1fr
+    / 1fr 1fr 1fr 1fr 1fr;
+}
+
+.navigation {
+  display: grid;
+  grid-area: navigation;
+}
+.left-panel {
+  display: grid;
+  grid-area: left-panel;
+}
+.main-content {
+  display: grid;
+  grid-area: main-content;
+}
+.right-panel {
+  display: grid;
+  grid-area: right-panel;
+}
+
 .navigation {
   display: grid;
   grid-template: ". ." / 6fr 12fr;
 
+  padding-left: 0;
+
   &__left-side {
     display: flex;
+    align-items: center;
   }
 
   &__linked-in-icon {
-    height: 250px;
+    padding-right: 1rem;
+  }
+
+  &____left-side-search {
   }
 
   &__search-label {
@@ -34,5 +65,6 @@
 
   &__links > * {
     list-style: none;
+    padding: 1rem;
   }
 }
