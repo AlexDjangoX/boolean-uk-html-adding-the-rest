@@ -1,13 +1,32 @@
 .navigation {
   display: grid;
-  grid-template: ". ." / 6fr 12fr;
+  grid-template:
+    ". ."
+    / 6fr 12fr;
 
-  padding-left: 0;
+  li {
+    padding: 1rem;
+
+    display: grid;
+    place-items: center;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  a {
+    color: black;
+    font-size: 0.55rem;
+  }
 
   &__left-side {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
+    justify-items: center;
+
+    padding-left: 16rem;
   }
 
   &__linked-in-icon {
@@ -38,10 +57,11 @@
   &__links {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
+
+    padding-right: 16rem;
   }
 
   &__links > * {
     list-style: none;
-    padding: 0.8rem;
   }
 }

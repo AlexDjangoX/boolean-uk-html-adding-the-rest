@@ -3,7 +3,7 @@
 body {
   display: grid;
   grid-template:
-    ". navigation navigation navigation ." 4rem
+    "navigation navigation navigation navigation navigation" 4rem
     ". left-panel main-content right-panel ." 25rem
     / 1fr 1fr 1fr 1fr 1fr;
 
@@ -15,7 +15,8 @@ body {
   display: grid;
   grid-area: navigation;
 
-  background-color: rgba(0, 183, 255, 0.61);
+  background-color: rgba(255, 255, 255, 0.61);
+  padding-bottom: 1rem;
 }
 .left-panel {
   display: grid;

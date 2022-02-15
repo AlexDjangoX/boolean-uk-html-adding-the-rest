@@ -1,7 +1,7 @@
 body {
   display: -ms-grid;
   display: grid;
-  grid-template: ". navigation navigation navigation ." 4rem ". left-panel main-content right-panel ." 25rem / 1fr 1fr 1fr 1fr 1fr;
+  grid-template: "navigation navigation navigation navigation navigation" 4rem ". left-panel main-content right-panel ." 25rem / 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5rem;
   background-color: #e4e4e4;
 }
@@ -10,7 +10,8 @@ body {
   display: -ms-grid;
   display: grid;
   grid-area: navigation;
-  background-color: rgba(0, 183, 255, 0.61);
+  background-color: rgba(255, 255, 255, 0.61);
+  padding-bottom: 1rem;
 }
 
 .left-panel {
@@ -37,8 +38,23 @@ body {
 .navigation {
   display: -ms-grid;
   display: grid;
-  grid-template: ". ." / 6fr 12fr;
+  grid-template: ". ." / 6fr 12fr;
+}
+
+.navigation li {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.navigation ul {
   padding-left: 0;
+}
+
+.navigation a {
+  color: black;
+  font-size: 0.55rem;
 }
 
 .navigation__left-side {
@@ -49,6 +65,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
+  padding-left: 16rem;
 }
 
 .navigation__linked-in-icon {
@@ -78,11 +96,11 @@ body {
   display: grid;
   -ms-grid-columns: auto auto auto auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto auto auto auto;
+  padding-right: 16rem;
 }
 
 .navigation__links > * {
   list-style: none;
-  padding: 0.8rem;
 }
 
 * {
