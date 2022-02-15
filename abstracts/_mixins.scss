@@ -1,0 +1,31 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+      // only apply to secreens, not when someone prints
+    } //0px 600px
+  }
+  @if $breakpoint == tablet-portrait {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //600px-900px
+  }
+  @if $breakpoint == tablet-landscape {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //900px-1200px
+  }
+
+  // [1200 - 1800] is where our normal styles apply
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800 plus screen
+  }
+}
+
+// @include respond(tab-port) {
+//   top: 0;
+//   scale: 1.2;
+// }

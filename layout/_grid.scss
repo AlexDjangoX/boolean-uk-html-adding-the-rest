@@ -15,6 +15,8 @@ body {
   display: grid;
   grid-area: navigation;
 
+  grid-column-end: span 5;
+
   background-color: rgba(255, 255, 255, 0.61);
   padding-bottom: 1rem;
 }
