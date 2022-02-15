@@ -1,5 +1,6 @@
 .navigation {
   display: grid;
+
   grid-template-columns: 6fr 12fr;
 
   li {
@@ -20,18 +21,17 @@
 
   &__left-side {
     display: grid;
+
     grid-template-columns: auto auto;
     align-items: center;
     justify-items: center;
-
-    padding-left: 16rem;
   }
 
   &__linked-in-icon {
     padding-right: 1rem;
   }
 
-  &____left-side-search {
+  &__left-side-search {
   }
 
   &__search-label {
@@ -55,8 +55,6 @@
   &__links {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
-
-    padding-right: 16rem;
   }
 
   &__links > * {
