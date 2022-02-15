@@ -2,26 +2,19 @@
 
 .main-content {
   &__start-post {
-    background-color: aqua;
-    margin: 0.5rem;
-  }
-
-  &__links {
-    background-color: blueviolet;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    background-color: rgb(75, 75, 75);
     margin: 0.5rem;
     padding: 1rem;
   }
-  &__top-panel {
-    border: 3px solid white;
-    border-radius: 12px;
-    background-color: crimson;
-  }
 
-  &__middle-panel {
-    border: 3px solid white;
+  &__links {
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 12px;
-    margin-top: 1rem;
-    background-color: crimson;
+    background-color: rgb(71, 70, 71);
+    margin: 0.5rem;
+    padding: 1rem;
   }
 
   &__links ul {
@@ -35,5 +28,19 @@
     width: 3rem;
     border-radius: 50%;
     border: 3px solid white;
+    margin-right: 2rem;
+  }
+
+  &__top-panel {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    background-color: rgb(151, 151, 151);
+  }
+
+  &__middle-panel {
+    border: 3px solid white;
+    border-radius: 12px;
+    margin-top: 1rem;
+    background-color: rgb(145, 145, 145);
   }
 }

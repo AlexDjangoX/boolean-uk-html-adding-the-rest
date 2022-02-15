@@ -60,13 +60,19 @@ body {
 .main-content {
   display: -ms-grid;
   display: grid;
-  grid-template: "start-post" "links" "." / auto;
+  grid-template: "start-post" auto "links" auto "." auto/ auto;
 }
 
 .main-content__start-post {
   display: -ms-grid;
   display: grid;
   grid-area: start-post;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-content__links {
@@ -85,7 +91,7 @@ body {
 .right-panel {
   display: -ms-grid;
   display: grid;
-  grid-template: "top" auto "middle" auto "bottom" auto "." / auto;
+  grid-template: "top" auto "middle" auto "bottom" auto "." auto/ auto;
 }
 
 .right-panel__top-content {
@@ -263,7 +269,7 @@ body {
 
 .left-panel__bottom-row {
   grid-area: bottom-row;
-  background-color: #f52f2f;
+  background-color: #7c7c7c;
 }
 
 .left-panel__middle-content ul {
@@ -295,27 +301,19 @@ body {
 }
 
 .main-content__start-post {
-  background-color: aqua;
-  margin: 0.5rem;
-}
-
-.main-content__links {
-  background-color: blueviolet;
+  border: 3px solid white;
+  border-radius: 12px;
+  background-color: #4b4b4b;
   margin: 0.5rem;
   padding: 1rem;
 }
 
-.main-content__top-panel {
+.main-content__links {
   border: 3px solid white;
   border-radius: 12px;
-  background-color: crimson;
-}
-
-.main-content__middle-panel {
-  border: 3px solid white;
-  border-radius: 12px;
-  margin-top: 1rem;
-  background-color: crimson;
+  background-color: #474647;
+  margin: 0.5rem;
+  padding: 1rem;
 }
 
 .main-content__links ul {
@@ -329,6 +327,20 @@ body {
   width: 3rem;
   border-radius: 50%;
   border: 3px solid white;
+  margin-right: 2rem;
+}
+
+.main-content__top-panel {
+  border: 3px solid white;
+  border-radius: 12px;
+  background-color: #979797;
+}
+
+.main-content__middle-panel {
+  border: 3px solid white;
+  border-radius: 12px;
+  margin-top: 1rem;
+  background-color: #919191;
 }
 
 .right-panel__top-content, .right-panel__middle-content, .right-panel__bottom-content,
@@ -338,16 +350,16 @@ body {
 }
 
 .right-panel__top-content {
-  background-color: aqua;
+  background-color: #8f8f8f;
   margin-bottom: 1rem;
 }
 
 .right-panel__middle-content {
-  background-color: #ffc400;
+  background-color: #8f8f8f;
   margin-bottom: 1rem;
 }
 
 .right-panel__bottom-content {
-  background-color: #8400ff;
+  background-color: #888888;
 }
 /*# sourceMappingURL=style.css.map */

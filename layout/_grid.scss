@@ -70,13 +70,16 @@ body {
 .main-content {
   display: grid;
   grid-template:
-    "start-post"
-    "links"
-    "." / auto;
+    "start-post" auto
+    "links" auto
+    "." auto/ auto;
 
   &__start-post {
     display: grid;
     grid-area: start-post;
+
+    display: flex;
+    align-items: center;
   }
 
   &__links {
@@ -98,7 +101,7 @@ body {
     "top" auto
     "middle" auto
     "bottom" auto
-    "." / auto;
+    "." auto/ auto;
 
   &__top-content {
     display: grid;
