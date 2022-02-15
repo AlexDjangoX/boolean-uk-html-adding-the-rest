@@ -4,7 +4,7 @@ body {
   display: grid;
   grid-template:
     "navigation navigation navigation navigation navigation" 4rem
-    ". left-panel main-content right-panel ." 25rem
+    ". left-panel main-content right-panel ." auto
     / 1fr 1fr 1fr 1fr 1fr;
 
   grid-gap: 0.5rem;
@@ -22,7 +22,7 @@ body {
   display: grid;
   grid-area: left-panel;
 
-  background-color: rgb(240, 243, 247);
+  // background-color: rgb(80, 153, 248);
 }
 .main-content {
   display: grid;
@@ -35,4 +35,24 @@ body {
   grid-area: right-panel;
 
   background-color: antiquewhite;
+}
+
+.left-panel {
+  display: grid;
+  grid-template:
+    "top-row "
+    "middle-row"
+    "bottom-row"/1fr;
+
+  &__top-row {
+    grid-area: top-row;
+  }
+
+  &__middle-row {
+    grid-area: middle-row;
+  }
+
+  &__bottom-row {
+    grid-area: bottom-row;
+  }
 }

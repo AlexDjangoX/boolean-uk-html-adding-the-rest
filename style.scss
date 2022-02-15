@@ -3,8 +3,6 @@
 @import "./layout/reset";
 
 .left-panel {
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 16px;
   &__images {
     display: grid;
     place-items: center;
@@ -77,5 +75,29 @@
 
     padding: 6px;
     font-size: 12px;
+  }
+
+  &__top-row,
+  &__middle-row,
+  &__bottom-row {
+    background-color: aqua;
+    border: 3px solid rgb(233, 43, 43);
+    border-radius: 16px;
+  }
+
+  &__top-row {
+    margin-bottom: 1rem;
+  }
+
+  &__middle-row {
+    margin-bottom: 1rem;
+
+    background-color: rgb(85, 47, 236);
+  }
+
+  &__bottom-row {
+    grid-area: bottom-row;
+
+    background-color: rgb(230, 23, 126);
   }
 }
