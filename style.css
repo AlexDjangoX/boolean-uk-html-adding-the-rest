@@ -1,19 +1,24 @@
 body {
   display: -ms-grid;
   display: grid;
-  grid-template: "navigation navigation navigation navigation navigation" 4rem ". left-panel main-content right-panel ." auto / 1fr 1fr 1fr 1fr 1fr;
+  grid-template: "navigation navigation navigation navigation navigation" 4rem ". left-panel main-content right-panel ." auto / 1fr 1fr 2fr 1fr 1fr;
   grid-gap: 0.5rem;
-  background-color: #e4e4e4;
+  background-color: #b3b3b3;
+}
+
+.navigation-wrapper {
+  grid-area: navigation;
+  display: -ms-grid;
+  display: grid;
+  grid-template: ". nav nav nav nav ." / 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: white;
 }
 
 .navigation {
   display: -ms-grid;
   display: grid;
-  grid-area: navigation;
-  -ms-grid-column-span: 5;
-      grid-column-end: span 5;
+  grid-area: nav;
   background-color: rgba(255, 255, 255, 0.61);
-  padding-bottom: 1rem;
 }
 
 .left-panel {
@@ -26,14 +31,12 @@ body {
   display: -ms-grid;
   display: grid;
   grid-area: main-content;
-  background-color: #ffe9a0;
 }
 
 .right-panel {
   display: -ms-grid;
   display: grid;
   grid-area: right-panel;
-  background-color: antiquewhite;
 }
 
 .left-panel {
@@ -52,6 +55,44 @@ body {
 
 .left-panel__bottom-row {
   grid-area: bottom-row;
+}
+
+.main-content {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "start-post" "links" "." / auto;
+}
+
+.main-content__start-post {
+  display: -ms-grid;
+  display: grid;
+  grid-area: start-post;
+}
+
+.main-content__links {
+  display: -ms-grid;
+  display: grid;
+  grid-area: links;
+}
+
+.main-content__links ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+.right-panel {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "top" auto "middle" auto "bottom" auto "." / auto;
+}
+
+.right-panel__top-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
 }
 
 .navigation {
@@ -86,7 +127,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  padding-left: 16rem;
 }
 
 .navigation__linked-in-icon {
@@ -116,7 +156,6 @@ body {
   display: grid;
   -ms-grid-columns: auto auto auto auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto auto auto auto;
-  padding-right: 16rem;
 }
 
 .navigation__links > * {
@@ -224,7 +263,7 @@ body {
 
 .left-panel__bottom-row {
   grid-area: bottom-row;
-  background-color: #f72323;
+  background-color: #f52f2f;
 }
 
 .left-panel__middle-content ul {
@@ -253,5 +292,62 @@ body {
 .left-panel h3:nth-child(5) {
   color: rgba(0, 0, 255, 0.808);
   font-size: 1.2rem;
+}
+
+.main-content__start-post {
+  background-color: aqua;
+  margin: 0.5rem;
+}
+
+.main-content__links {
+  background-color: blueviolet;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.main-content__top-panel {
+  border: 3px solid white;
+  border-radius: 12px;
+  background-color: crimson;
+}
+
+.main-content__middle-panel {
+  border: 3px solid white;
+  border-radius: 12px;
+  margin-top: 1rem;
+  background-color: crimson;
+}
+
+.main-content__links ul {
+  list-style: none;
+  padding: 3px;
+  margin: 3px;
+  font-size: 0.8rem;
+}
+
+.main-content__profile-image {
+  width: 3rem;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.right-panel__top-content, .right-panel__middle-content, .right-panel__bottom-content,
+.right-panel section > div {
+  border: 3px solid white;
+  border-radius: 12px;
+}
+
+.right-panel__top-content {
+  background-color: aqua;
+  margin-bottom: 1rem;
+}
+
+.right-panel__middle-content {
+  background-color: #ffc400;
+  margin-bottom: 1rem;
+}
+
+.right-panel__bottom-content {
+  background-color: #8400ff;
 }
 /*# sourceMappingURL=style.css.map */

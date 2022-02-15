@@ -23,8 +23,6 @@
     grid-template-columns: auto auto;
     align-items: center;
     justify-items: center;
-
-    padding-left: 16rem;
   }
 
   &__linked-in-icon {
@@ -55,8 +53,6 @@
   &__links {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
-
-    padding-right: 16rem;
   }
 
   &__links > * {

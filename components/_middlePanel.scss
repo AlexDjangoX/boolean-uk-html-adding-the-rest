@@ -1,0 +1,39 @@
+// middle
+
+.main-content {
+  &__start-post {
+    background-color: aqua;
+    margin: 0.5rem;
+  }
+
+  &__links {
+    background-color: blueviolet;
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+  &__top-panel {
+    border: 3px solid white;
+    border-radius: 12px;
+    background-color: crimson;
+  }
+
+  &__middle-panel {
+    border: 3px solid white;
+    border-radius: 12px;
+    margin-top: 1rem;
+    background-color: crimson;
+  }
+
+  &__links ul {
+    list-style: none;
+    padding: 3px;
+    margin: 3px;
+    font-size: 0.8rem;
+  }
+
+  &__profile-image {
+    width: 3rem;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+}

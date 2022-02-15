@@ -25,8 +25,7 @@
     position: relative;
     top: -20px;
   }
-  &__content {
-  }
+
   &__top-heading,
   &__sub-heading {
     display: grid;
@@ -92,6 +91,36 @@
   &__bottom-row {
     grid-area: bottom-row;
 
-    background-color: rgb(247, 35, 35);
+    background-color: rgb(245, 47, 47);
+  }
+}
+
+.left-panel {
+  &__middle-content ul {
+    padding-left: 1rem;
+  }
+
+  &__middle-content li {
+    list-style: none;
+
+    padding: 0.2rem;
+    font-size: 1rem;
+
+    display: flex;
+  }
+
+  &__middle-content img {
+    padding-right: 1rem;
+  }
+
+  &__middle-content h3 {
+    padding: 1rem;
+    font-weight: 300;
+  }
+
+  &__middle-row section h3:nth-child(3),
+  h3:nth-child(5) {
+    color: rgba(0, 0, 255, 0.808);
+    font-size: 1.2rem;
   }
 }

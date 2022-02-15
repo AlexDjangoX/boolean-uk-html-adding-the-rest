@@ -8,60 +8,61 @@
     <title>LinkedIn</title>
   </head>
   <body>
-    <nav class="navigation">
-      <div class="navigation__left-side">
-        <div class="navigation__linked-in-icon">
-          <img src="./images/icons/linkedin.svg" alt="LinkedIn NetworkIcon" />
+    <div class="navigation-wrapper">
+      <nav class="navigation">
+        <div class="navigation__left-side">
+          <div class="navigation__linked-in-icon">
+            <img src="./images/icons/linkedin.svg" alt="LinkedIn NetworkIcon" />
+          </div>
+          <div class="navigation__left-side-search">
+            <label class="navigation__search-label">
+              <input
+                class="navigation__search-input"
+                type="text"
+                placeholder="Search"
+              />
+            </label>
+          </div>
         </div>
-        <div class="navigation__left-side-search">
-          <label class="navigation__search-label">
-            <input
-              class="navigation__search-input"
-              type="text"
-              placeholder="Search"
+        <ul class="navigation__links">
+          <li class="navigatiion__links-home">
+            <img src="./images/icons/home.svg" alt="Home Icon" />
+            <a href="#">Home</a>
+          </li>
+          <li class="navigation__links-network">
+            <img src="./images/icons/chat.svg" alt="Network Icon" />
+            <a href="#">Networks</a>
+          </li>
+          <li class="navigation__links-jobs">
+            <img src="./images/icons/bookmark.svg" alt="Bookmark Icon" />
+            <a href="#">Jobs</a>
+          </li>
+          <li class="navigation__links-messaging">
+            <img src="./images/icons/chat.svg" alt="Messaging Icon" />
+            <a href="#">Messaging</a>
+          </li>
+          <li class="navigation__links-notifications">
+            <img
+              src="./images/icons/aircraft-take-off.svg"
+              alt="Notifications Icon"
             />
-          </label>
-        </div>
-      </div>
-      <ul class="navigation__links">
-        <li class="navigatiion__links-home">
-          <img src="./images/icons/home.svg" alt="Home Icon" />
-          <a href="#">Home</a>
-        </li>
-        <li class="navigation__links-network">
-          <img src="./images/icons/chat.svg" alt="Network Icon" />
-          <a href="#">Networks</a>
-        </li>
-        <li class="navigation__links-jobs">
-          <img src="./images/icons/bookmark.svg" alt="Bookmark Icon" />
-          <a href="#">Jobs</a>
-        </li>
-        <li class="navigation__links-messaging">
-          <img src="./images/icons/chat.svg" alt="Messaging Icon" />
-          <a href="#">Messaging</a>
-        </li>
-        <li class="navigation__links-notifications">
-          <img
-            src="./images/icons/aircraft-take-off.svg"
-            alt="Notifications Icon"
-          />
-          <a href="#">Notofications</a>
-        </li>
-        <li class="navigation__links-me">
-          <img src="./images/icons/key.svg" alt="Key Icon" />
-          <a href="#">Me</a>
-        </li>
-        <li class="navigation__links-work">
-          <img src="./images/icons/map.svg" alt="Map Icon" />
-          <a href="#">Work</a>
-        </li>
-        <li class="navigation__links-post">
-          <img src="./images/icons/bookmark.svg" alt="Bookmark Icon" />
-          <a href="#">Post</a>
-        </li>
-      </ul>
-    </nav>
-
+            <a href="#">Notofications</a>
+          </li>
+          <li class="navigation__links-me">
+            <img src="./images/icons/key.svg" alt="Key Icon" />
+            <a href="#">Me</a>
+          </li>
+          <li class="navigation__links-work">
+            <img src="./images/icons/map.svg" alt="Map Icon" />
+            <a href="#">Work</a>
+          </li>
+          <li class="navigation__links-post">
+            <img src="./images/icons/bookmark.svg" alt="Bookmark Icon" />
+            <a href="#">Post</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <aside class="left-panel">
       <div class="left-panel__top-row">
         <div class="left-panel__images">
@@ -117,16 +118,10 @@
               <img src="./images/icons/hash.svg" alt="" />bestenvironments
             </li>
             <li>
-              <img
-                src="./images/icons/hash.svg"
-                alt=""
-              />getkrackenwithgitkracken
+              <img src="./images/icons/hash.svg" alt="" />getkrackengitkracken
             </li>
             <li>
-              <img
-                src="./images/icons/hash.svg"
-                alt=""
-              />codeingatitsmostchallenging
+              <img src="./images/icons/hash.svg" alt="" />codeingchallenging
             </li>
             <li>
               <img src="./images/icons/hash.svg" alt="" />bethesecondto bebest
@@ -152,25 +147,65 @@
         </section>
       </div>
     </aside>
+
     <main class="main-content">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae animi
-      sapiente, obcaecati, ut tempora et ab aperiam minima iusto accusamus
-      possimus magnam eaque quis, laborum consequuntur earum impedit delectus
-      rerum assumenda odit dignissimos aliquam! Porro numquam est fuga sed
-      molestiae commodi assumenda adipisci veniam, aspernatur deleniti officiis,
-      optio neque harum sequi sapiente quasi! Tenetur possimus eligendi aperiam
-      non dolorem optio voluptas, expedita, dolore nihil ea laudantium maiores
-      ratione dicta et.
+      <section class="main-content__top-panel">
+        <div class="main-content__start-post">
+          <img
+            class="main-content__profile-image"
+            src="https://media.istockphoto.com/photos/gorgeous-ginger-cat-on-isolated-black-background-picture-id1018078858?k=20&m=1018078858&s=612x612&w=0&h=N8HorY5Ipk-RibWqx3zPERGpdB0ZT8mIhCvkDPRql6A="
+            alt="potrait AlexDjangoX"
+          />
+        </div>
+        <div class="main-content__links">
+          <ul>
+            <li>
+              <img src="./images/icons/bookmark.svg" alt="Bookmark Icon" />Photo
+            </li>
+            <li>
+              <img src="./images/icons/bookmark.svg" alt="Bookmark Icon" />Video
+            </li>
+            <li>
+              <img
+                src="./images/icons/bookmark.svg"
+                alt="Bookmark Icon"
+              />Document
+            </li>
+            <li>
+              <img
+                src="./images/icons/bookmark.svg"
+                alt="Bookmark Icon"
+              />Article
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-content__middle-panel">
+        <p>Lorem ipsum dolor.</p>
+      </section>
     </main>
     <aside class="right-panel">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aut
-      pariatur, minima consequatur dignissimos enim distinctio corporis libero
-      accusamus impedit? Temporibus, ratione debitis nobis magnam ab dolore.
-      Dolores voluptatum velit explicabo, iure, quos nostrum dicta laudantium
-      nobis, alias eveniet hic iusto at? Rem explicabo dolore nostrum adipisci
-      nulla et tenetur id error reprehenderit dignissimos repellat harum libero
-      voluptatem odio illo pariatur quos sapiente sint expedita, iusto quod.
-      Vel, repellendus temporibus?
+      <section class="right-panel__top-content">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section class="right-panel__middle-content"></section>
+      <section class="right-panel__bottom-content"></section>
     </aside>
   </body>
 </html>
+
+<!-- 
+<div class="main-content__left-side-search">
+  <label class="main-content__search-label">
+    <input
+      class="main-content__search-input"
+      type="text"
+      placeholder="Search"
+    />
+  </label>
+</div>
+ -->

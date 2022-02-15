@@ -1,0 +1,23 @@
+// right-panel
+
+.right-panel {
+  &__top-content,
+  &__middle-content,
+  &__bottom-content,
+  section > div {
+    border: 3px solid white;
+    border-radius: 12px;
+  }
+
+  &__top-content {
+    background-color: aqua;
+    margin-bottom: 1rem;
+  }
+  &__middle-content {
+    background-color: rgb(255, 196, 0);
+    margin-bottom: 1rem;
+  }
+  &__bottom-content {
+    background-color: rgb(132, 0, 255);
+  }
+}
