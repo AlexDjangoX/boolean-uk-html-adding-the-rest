@@ -40,7 +40,8 @@ body {
   grid-template:
     "top-row " auto
     "middle-row" auto
-    "bottom-row" 1fr / auto;
+    "bottom-row" auto
+    "." 1fr / auto;
 
   &__top-row {
     grid-area: top-row;

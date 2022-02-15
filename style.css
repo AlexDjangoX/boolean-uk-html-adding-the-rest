@@ -37,7 +37,7 @@ body {
 .left-panel {
   display: -ms-grid;
   display: grid;
-  grid-template: "top-row " auto "middle-row" auto "bottom-row" 1fr / auto;
+  grid-template: "top-row " auto "middle-row" auto "bottom-row" auto "." 1fr / auto;
 }
 
 .left-panel__top-row {
@@ -222,6 +222,7 @@ body {
 
 .left-panel__bottom-row {
   grid-area: bottom-row;
+  background-color: #f72323;
 }
 
 .left-panel__middle-content ul {
