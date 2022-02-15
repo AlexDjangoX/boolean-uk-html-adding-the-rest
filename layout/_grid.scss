@@ -21,8 +21,6 @@ body {
 .left-panel {
   display: grid;
   grid-area: left-panel;
-
-  // background-color: rgb(80, 153, 248);
 }
 .main-content {
   display: grid;
@@ -40,9 +38,9 @@ body {
 .left-panel {
   display: grid;
   grid-template:
-    "top-row "
-    "middle-row"
-    "bottom-row"/1fr;
+    "top-row " auto
+    "middle-row" auto
+    "bottom-row" 1fr / auto;
 
   &__top-row {
     grid-area: top-row;

@@ -37,7 +37,7 @@ body {
 .left-panel {
   display: -ms-grid;
   display: grid;
-  grid-template: "top-row " "middle-row" "bottom-row"/1fr;
+  grid-template: "top-row " auto "middle-row" auto "bottom-row" 1fr / auto;
 }
 
 .left-panel__top-row {
@@ -55,7 +55,8 @@ body {
 .navigation {
   display: -ms-grid;
   display: grid;
-  grid-template: ". ." / 6fr 12fr;
+  -ms-grid-columns: 6fr 12fr;
+      grid-template-columns: 6fr 12fr;
 }
 
 .navigation li {
@@ -206,9 +207,9 @@ body {
 }
 
 .left-panel__top-row, .left-panel__middle-row, .left-panel__bottom-row {
-  background-color: aqua;
-  border: 3px solid #e92b2b;
+  border: 3px solid white;
   border-radius: 16px;
+  padding: 0.4rem;
 }
 
 .left-panel__top-row {
@@ -217,11 +218,37 @@ body {
 
 .left-panel__middle-row {
   margin-bottom: 1rem;
-  background-color: #552fec;
 }
 
 .left-panel__bottom-row {
   grid-area: bottom-row;
-  background-color: #e6177e;
+}
+
+.left-panel__middle-content ul {
+  padding-left: 1rem;
+}
+
+.left-panel__middle-content li {
+  list-style: none;
+  padding: 0.2rem;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left-panel__middle-content img {
+  padding-right: 1rem;
+}
+
+.left-panel__middle-content h3 {
+  padding: 1rem;
+  font-weight: 300;
+}
+
+.left-panel__middle-row section h3:nth-child(3),
+.left-panel h3:nth-child(5) {
+  color: rgba(0, 0, 255, 0.808);
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */

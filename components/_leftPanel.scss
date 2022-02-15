@@ -1,0 +1,95 @@
+.left-panel {
+  &__images {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto;
+
+    padding-top: 0.5rem;
+  }
+  &__header-image {
+    width: 12rem;
+    height: 3rem;
+
+    object-fit: cover;
+    width: 100%;
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  &__profile-image {
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid white;
+
+    position: relative;
+    top: -20px;
+  }
+  &__content {
+  }
+  &__top-heading,
+  &__sub-heading {
+    display: grid;
+    place-items: center;
+
+    font-weight: 400;
+
+    padding: 0.2rem;
+  }
+
+  &__top-heading {
+    font-size: 1.2rem;
+  }
+
+  &__sub-heading {
+    font-size: 1.2rem;
+  }
+
+  &__views-posts {
+    display: grid;
+    grid-template: ". . " / 3fr 1fr;
+  }
+  &__views-content {
+    font-size: 14px;
+
+    padding: 1rem 0;
+  }
+  &__views-numbers {
+    color: rgb(0, 26, 255);
+    font-weight: 600;
+
+    padding: 1rem 0;
+  }
+  &__access-offers {
+    font-size: 12px;
+
+    padding: 1rem 0;
+  }
+
+  &__my-items-link {
+    display: flex;
+
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  &__top-row,
+  &__middle-row,
+  &__bottom-row {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    padding: 0.4rem;
+  }
+
+  &__top-row {
+    margin-bottom: 1rem;
+  }
+
+  &__middle-row {
+    margin-bottom: 1rem;
+  }
+
+  &__bottom-row {
+    grid-area: bottom-row;
+  }
+}

@@ -1,8 +1,6 @@
 .navigation {
   display: grid;
-  grid-template:
-    ". ."
-    / 6fr 12fr;
+  grid-template-columns: 6fr 12fr;
 
   li {
     padding: 1rem;
