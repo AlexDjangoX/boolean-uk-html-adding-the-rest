@@ -69,14 +69,16 @@ body {
 
 .main-content {
   display: grid;
-  grid-template:
-    "start-post" auto
-    "links" auto
-    "." auto/ auto;
+  // grid-template:
+  //   "start-post" auto
+  //   "links" auto
+  //   "." auto/ auto;
+
+  grid-template-rows: repeat(3, auto);
 
   &__start-post {
-    display: grid;
-    grid-area: start-post;
+    // display: grid;
+    // grid-area: start-post;
 
     display: flex;
     align-items: center;
@@ -97,14 +99,15 @@ body {
 
 .right-panel {
   display: grid;
-  grid-template:
-    "top" auto
-    "middle" auto
-    "bottom" auto
-    "." auto/ auto;
+  // grid-template:
+  //   "top" auto
+  //   "middle" auto
+  //   "bottom" auto
+  //   "." auto/ auto;
+  grid-template-rows: repeat(4, auto);
 
   &__top-content {
     display: grid;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(5, 1fr);
   }
 }

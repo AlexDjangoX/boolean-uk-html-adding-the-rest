@@ -1,5 +1,5 @@
 @import "./layout/grid";
-@import "./layout/navigation";
+
 @import "./layout/reset";
 
 @import "./abstracts/mixins";
@@ -7,5 +7,6 @@
 
 @import "./components/leftPanel";
 @import "./components/middlePanel";
+@import "./components/navigation";
 @import "./components/rightPanel";
 @import "./components/universalStyles";
