@@ -5,5 +5,16 @@
   border-radius: 12px;
 }
 
+.center {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 // background-color: $color-white;
 // color: $color-grey-dark;
+
+//  <a>href='#section-id'>Anchor Link</a> <p id='section-id'></p>
+
+html {
+  scroll-behavior: smooth;
+}
